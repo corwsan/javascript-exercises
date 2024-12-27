@@ -1,9 +1,9 @@
-const removeFromArray = function(array, toRemove) {
+const removeFromArray = function(array, ...args) {
 
     const newArray = array.filter(checkFilter);
 
         function checkFilter (item) {
-            return item != toRemove;
+            return !args.includes(item);
         }
 
     return newArray;
