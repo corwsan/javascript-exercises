@@ -9,8 +9,12 @@ const subtract = function(num1, num2) {
 	
 };
 
-const sum = function() {
-	
+const sum = function(toSum) {
+  let finalSum = 0;
+  for (i = 0; i < toSum.length; i++) {
+    finalSum += toSum[i];
+  }
+  return finalSum
 };
 
 const multiply = function() {
