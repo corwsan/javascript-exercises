@@ -11,13 +11,18 @@ const subtract = function(num1, num2) {
 
 const sum = function(toSum) {
   let finalSum = 0;
-  for (i = 0; i < toSum.length; i++) {
+  for (let i = 0; i < toSum.length; i++) {
     finalSum += toSum[i];
   }
   return finalSum
 };
 
-const multiply = function() {
+const multiply = function(nums) {
+  let finalSum = 1;
+  for (let i = 0; i < nums.length; i++) {
+    finalSum *= nums[i];
+  }
+  return finalSum;
 
 };
 
