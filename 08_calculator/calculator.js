@@ -31,7 +31,24 @@ const power = function(num1, num2) {
   return result;
 };
 
-const factorial = function() {
+const factorial = function(num) {
+
+  let result = 1;
+
+  if (num === 0 || num === 1) {
+
+    return result;
+
+  } else {
+
+    for (let i = 1; i < num; i++) {
+
+      result *= num;
+    }
+
+    return result;
+  }
+  
 	
 };
 
