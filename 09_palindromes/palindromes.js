@@ -10,11 +10,9 @@ ignore punctuation
 
 
 const palindromes = function (string) {
-
     let forwardString = string.toLowerCase().replace(/[,.!]/g,"").split(" ").join("");
-    let reverseString = forwardString.split("").reverse().join("")
+    let reverseString = forwardString.split("").reverse().join("");
     return forwardString === reverseString;
-
 };
 
 // Do not edit below this line
